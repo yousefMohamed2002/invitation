@@ -11,7 +11,7 @@
 :root[data-theme="dark"]{--ivory:#2b2118;--cream:#33271c;--champ:#4a3922;--card:#3a2c1e;--ink:#f3e6cc;--deep:#dcb98a}
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth;scroll-padding-top:var(--st)}
-body{background:var(--ivory);color:var(--ink);font:19px/1.9 'Amiri','Geeza Pro',serif;padding-top:var(--st);padding-bottom:var(--sb);overflow-x:hidden}
+body{background:var(--ivory);color:var(--ink);font:19px/1.9 'Amiri','Geeza Pro',serif;padding-top:var(--st);padding-bottom:var(--sb);overflow-x:hidden;margin:0}
 .gold{background:linear-gradient(135deg,#f3dfc8,#b8935a 40%,#85603a 65%,#d4ad78);-webkit-background-clip:text;background-clip:text;color:transparent}
 h1,h2,.names{font-family:'Aref Ruqaa','Amiri',serif;font-weight:700}
 .wrap{max-width:460px;margin:0 auto;padding:0 22px}
@@ -21,7 +21,6 @@ h2{font-size:36px;line-height:1.5}
 .cf{position:absolute;width:120px;height:120px;opacity:.55;pointer-events:none;top:6px}
 .cf.l{left:-48px}.cf.r{right:-48px;transform:scaleX(-1)}
 /* envelope */
-body:not(.go){overflow:hidden;height:100svh}
 #env{position:fixed;inset:0;z-index:9;overflow:hidden;display:grid;place-items:center}
 #env .t{position:absolute;background:repeating-radial-gradient(circle at 50% 45%,#ffffff0a 0 2px,#0000000a 2px 5px),radial-gradient(circle,#938d80,#68625700 0),#7a7468;transition:transform 1.5s cubic-bezier(.7,0,.2,1) .35s}
 .tp{top:0;left:0;width:100%;height:50%;clip-path:polygon(0 0,100% 0,50% 100%)}.bt{bottom:0;left:0;width:100%;height:50%;clip-path:polygon(0 100%,100% 100%,50% 0)}
@@ -177,14 +176,9 @@ svg.orn{width:240px;height:64px;margin:0 auto 2px}.ty svg.orn{width:200px;height
     <a class="btn" id="mapBtn" href="#">الوصول للقاعة</a>
   </section>
 
-  <section class="deco">
-    <svg class="orn" aria-hidden="true"><use href="#gl2"/></svg><h2 class="gold">اكتب كلمة للعروسين</h2>
-    <p>اترك لنا رسالة تهنئة نحتفظ بها</p>
+  <section>
     <form id="rsvp">
-      <label for="nm">الاسم</label><input id="nm" type="text" required>
-      <label for="ms">كلمة للعروسين</label><textarea id="ms" rows="3"></textarea>
-      <button class="btn" type="submit">إرسال</button>
-      <p class="thanks" id="thx">شكرًا لكم، وصلت كلمتكم للعروسين.</p>
+     
     </form>
   </section>
 
